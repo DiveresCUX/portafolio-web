@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+
+
+.nav__{
+    display: flex;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.nav__ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    gap: 50px;
+    padding: 10px;
+    list-style:none;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.nav__li a{
+    font-size: 20px;
+    color: #ffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.nav__li__a{
+    background-image: linear-gradient(90deg, green, blue, orange);
+    cursor: pointer;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 700ms ease-in-out;
+}
+.nav__li__a:hover{
+    background-size: 100% 2px;
+}
+
+
+.presentation__banner{
+    background-color: blue;
+    background-image: url('img/banner.jpeg');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+
+}
+
+.presentation__cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.presentation__cv a{
+    display: block;
+    border: #ffff solid;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+}
+
+.presentation__cv a:hover{
+    background-color: green;
+}
+
+
+
+
+.presentation__about{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutme__{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 100px;
+}
+
+.aboutme__logo img{
+    width: 340px;
+}
+
+.aboutme__presentation p{
+    color: #ffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+
+.skills__{
+ 
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+   
+}
+
+.skills__ p{
+    font-size: 30px;
+    color: #ffff;
+}
+
+.skills__code{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.skills__suport{
+
+    width: 90%;
+}
+
+.skills__suport__ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills__suport__ul li{
+border: #ffff solid;
+padding: 10px;
+list-style: none;
+border-radius: 5px;
+color: #ffff;
+}
+
+.skills__suport__ul li:hover{
+    background-color: green;
+}
+
+.language__{
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.language__p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #ffff;
+}
+
+.languague__types{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.languague__types p{
+    border: #ffff solid;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+}
+
+.language__types__spanish:hover{
+    background-color: green;
+}
+
+.languague__types__english:hover{
+    background-color: green;
+}
+
+.footer__{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    padding: 80px;
+    flex-direction: row-reverse;
+}
+
+.footer__opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+
+    gap: 10px;
+}
+
+.footer__opciones p{
+    color: #ffff;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer__opciones a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footer__contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 200px;
+ 
+
+}
+
+.footer__contacto p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #ffff;
+}
+
+.footer__datos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    height: 200px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+}
+
+.footer__datos__esp{
+    font-size: 30px;
+}
+
+
+.copyrigth__{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 1058px ){
+
+    .nav__{
+        width: 1fr;
+    }
+    .nav__logo{
+        width: 50px;
+
+    }
+    
+    .nav__ul{
+        gap: 30px;
+        width: 96%;
+    }
+
+    .skills__suport{
+        height: auto;
+        width: 90%;
+      
+        padding: 45px;
+    }
+
+
+    .aboutme__{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        gap: 20px;
+        }
+
+    .aboutme__presentation{
+     padding: 10px;   
+    
+    
+    }
+
+    .footer__{
+        flex-direction: column;
+        gap: 30px;
+        height: 600px;
+    }
+
+    
+
+}
+
+@media (max-width: 600px){
+
+
+    .nav__logo{
+        display: none;
+    }
+
+    .nav__ul{
+
+        width: 100%;
+        justify-content: center;
+    }
+    .nav__li a{
+        font-size: 18px;
+
+    }
+    .skills__{    
+        height: 800px;
+    }
+
+    .skills__suport__ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+    .languague__types{
+        width: 70%;
+    }
+
+    .footer__{
+        flex-direction: column;
+        gap: 30px;
+        height: 600px;
+    }
+
+}
+
+@media (max-width: 415px){
+    .nav__ul{
+        padding: 8px;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav__{   
+        width: 100%;
+    }
+
+
+    .aboutme__{
+        height: 650px;
+    }
+    .aboutme__presentation{
+        width: 340px;
+    }
+
+    .languague__types{
+        gap: 30px;
+    }
+
+    .copyrigth__{
+        font-size: 10px;
+    }
+    
+}
